@@ -1,0 +1,76 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.avatar {
+    width: 150px;
+    border: 1px solid #046865;
+    border-radius: 5px;
+    transform: rotate(-360deg); /* Initial rotation to hide the image */
+    animation: rollIn 1.5s forwards; /* Apply the rolling animation */
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #64b6ac;
+    color: black;
+    border: 3px solid #046865;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px #046865; 
+    text-shadow: 2px 2px 6px #046865;
+    animation: text-color-change 4s forwards;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.card:hover {
+    background-color: #046865;
+    border-color: #64b6ac;
+    box-shadow: 5px 5px 6px #64b6ac;
+}
+
+@keyframes text-color-change {
+from {color: black;}
+to {color: white;}
+}
+
+@keyframes rollIn {
+    0% {
+        transform: rotate(-360deg) translateX(-200px); /* Initial position and rotation */
+    }
+    100% {
+        transform: rotate(0deg) translateX(0); /* Final position and rotation */
+    }
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
